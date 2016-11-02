@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/z2_margin_bigspace"
+    android:paddingRight="@dimen/z2_margin_smallgap">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:background="#b500b8"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DoctorName"
+                android:id="@+id/textView112"
+                android:paddingTop="@dimen/z2_margin_space"
+                android:paddingLeft="@dimen/z2_margin_smallgap"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DateAppointment"
+                    android:id="@+id/textView113"
+                    android:paddingLeft="@dimen/z2_margin_smallgap"
+                    android:paddingTop="@dimen/z2_margin_space"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TimeAppointment"
+                    android:id="@+id/textView114"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NoteAppointment"
+                android:id="@+id/textView115"
+                android:paddingLeft="@dimen/z2_margin_smallgap"
+                android:paddingTop="@dimen/z2_margin_space" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/textView116"
+        android:textSize="1sp"
+        android:background="#7d7d7d"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="@dimen/z2_margin_bigspace"
+        android:layout_marginRight="@dimen/z2_margin_bigspace" />
+</LinearLayout>

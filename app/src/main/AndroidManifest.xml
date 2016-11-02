@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.su.lapponampai_w.mhm_app_beta1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/my_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMedicineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMedicine2Activity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".DailyUpdateReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name=".MyCalendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MedicationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DrugInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TakeSkipMedicineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MedicationDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUpAddAmountMedicine"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".AdherenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUpCalendarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutMHMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransferDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUpChangeTradeGenericName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUpGate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PatientAdherenceActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

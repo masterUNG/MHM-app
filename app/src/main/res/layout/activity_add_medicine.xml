@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.AddMedicineActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6643ff"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton5"
+            android:src="@drawable/btn_menu"
+            android:background="#00000000"
+            android:layout_weight="10"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="MHM Application"
+            android:id="@+id/textView8"
+            android:layout_weight="200"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton6"
+            android:src="@drawable/btn_calendar"
+            android:background="#00000000"
+            android:layout_weight="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="โปรดระบุตัวยา"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/heading3"
+            android:layout_marginBottom="@dimen/z2_margin_smallgap" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_Add_TG"
+                android:layout_marginBottom="@dimen/z2_margin_space"
+                android:hint="Trade/ Generic name"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="filter"
+                android:id="@+id/buttonFilterListView"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_Add_TG"
+            android:layout_marginLeft="@dimen/z2_margin_smallgap"
+            android:layout_marginRight="@dimen/z2_margin_smallgap" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:id="@+id/spinner2"
+        android:background="@drawable/btn_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.NewsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6643ff"
+        android:layout_gravity="center"
+        android:id="@+id/linHeadingNews">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/btn_menu"
+            android:background="#00000000"
+            android:layout_weight="10"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="MHM Application"
+            android:id="@+id/textView42"
+            android:layout_weight="200"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/btn_calendar"
+            android:background="#00000000"
+            android:layout_weight="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linHeadingNews"
+        android:id="@+id/linHeadingNews2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ข่าวสารยา"
+            android:id="@+id/textView100"
+            android:textSize="@dimen/heading2"
+            android:gravity="center"
+            android:layout_margin="@dimen/z2_margin_space" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewNewsActivity"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/linHeadingNews2" />
+
+    <Spinner
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:id="@+id/spinner3"
+        android:background="@drawable/btn_menu" />
+
+</RelativeLayout>

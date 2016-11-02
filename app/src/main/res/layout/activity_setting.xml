@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.SettingActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linPW1">
+
+        <TextView
+            android:text="ตั้งค่า"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView172"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/heading1"
+            android:background="#6643ff"
+            android:paddingTop="@dimen/z2_margin_space"
+            android:paddingBottom="@dimen/z2_margin_space"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView173">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/headSettingLayout"
+            android:gravity="left"
+            android:elevation="24dp">
+
+            <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView174"
+                android:textSize="1sp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="การแจ้งเตือน(Notification)"
+                android:id="@+id/textView45"
+                android:gravity="right"
+                android:textColor="@android:color/holo_purple"
+                android:background="@drawable/my_border_shadow"
+                android:padding="5dp"
+                android:layout_marginBottom="@dimen/z2_margin_space"
+                android:textSize="@dimen/heading3" />
+
+            <TextView
+                android:text="ระบบการแจ้งเตือนเมื่อถึงเวลารับประทานยา"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView154" />
+
+            <Switch
+                android:text="ปิด / เปิด"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:textSize="@dimen/heading4"
+                android:layout_marginTop="@dimen/z2_margin_bigspace"
+                android:layout_marginBottom="@dimen/z2_margin_bigspace"
+                android:layout_marginLeft="100dp"
+                android:textColor="@android:color/background_dark"
+                android:switchTextAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/headSettingLayout2"
+                android:gravity="left"
+                android:background="@drawable/my_border_shadow"
+                android:layout_below="@+id/headSettingLayout">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อความการแจ้งเตือน"
+                android:id="@+id/textView156"
+                android:gravity="right"
+                android:textColor="@android:color/holo_red_light"
+                android:background="@drawable/my_border_shadow"
+                android:padding="5dp"
+                android:layout_marginBottom="@dimen/z2_margin_space"
+                android:textSize="@dimen/heading4" />
+
+            <TextView
+                android:text="ระบุข้อความที่ต้องการแจ้งเตือน"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView155" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ค่าเริ่มต้น"
+                    android:id="@+id/checkBoxSetting1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/heading3"
+                    app:buttonTint="@android:color/holo_red_light" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ตั้งค่าเอง"
+                        android:id="@+id/checkBoxSetting2"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/heading3"
+                        app:buttonTint="@android:color/holo_red_light" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/editText14"
+                        android:layout_weight="2"
+                        android:inputType="text"
+                        android:hint="โปรดระบุข้อความ"
+                        android:backgroundTint="@android:color/holo_red_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/linSettingButton" >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="บันทึก"
+                        android:id="@+id/buttonSettingSave"
+                        android:layout_weight="1"
+                         />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/headSettingLayout3"
+                android:gravity="left"
+                android:background="@drawable/my_border_shadow"
+                android:layout_below="@+id/headSettingLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ความปลอดภัย(Security)"
+                android:id="@+id/textView185"
+                android:gravity="right"
+                android:textColor="@android:color/holo_red_light"
+                android:background="@drawable/my_border_shadow"
+                android:padding="5dp"
+                android:layout_marginBottom="@dimen/z2_margin_space"
+                android:textSize="@dimen/heading4" />
+
+            <TextView
+                android:text="ตั้งระดับความปลอดภัยในการเข้าถึงข้อมูลโดยรหัสผ่าน"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView186" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่ป้องกัน"
+                        android:id="@+id/checkBoxSetting3"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/heading3"
+                        app:buttonTint="@android:color/holo_red_light" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ระดับปานกลาง"
+                            android:id="@+id/checkBoxSetting4"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/heading3"
+                            app:buttonTint="@android:color/holo_red_light" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ระดับสูงสุด"
+                            android:id="@+id/checkBoxSetting5"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/heading3"
+                            app:buttonTint="@android:color/holo_red_light" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView187" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headSettingLayout3"
+                android:elevation="17dp"
+                android:layout_marginTop="@dimen/z2_margin_bigspace">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="เปลี่ยนรหัสผ่าน"
+                    android:id="@+id/textView157"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/my_border_orange"
+                    android:padding="10dp"
+                    android:textSize="@dimen/heading3"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="เกี่ยวกับโปรแกรม MHM"
+                    android:id="@+id/textView158"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/my_border_orange"
+                    android:padding="10dp"
+                    android:textSize="@dimen/heading3"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TranferData"
+        android:id="@+id/btnForTransferData"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ForSuperUser"
+        android:id="@+id/btnForSuperUser"
+        android:layout_above="@+id/btnForTransferData"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linPW1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView173"
+        android:textSize="@dimen/heading3"
+        android:layout_marginTop="@dimen/z2_margin_space"
+        android:layout_marginLeft="@dimen/z2_margin_space"
+        android:gravity="right" />
+
+</RelativeLayout>

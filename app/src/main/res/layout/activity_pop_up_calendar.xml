@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.PopUpCalendarActivity"
+    android:background="#6b357c">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linPopUpCalendar"
+        android:layout_above="@+id/buttonPopUpCalendar"
+        android:layout_margin="@dimen/z2_margin_bigspace"
+        android:background="#ffffff">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/calendarView2" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เลือกวันที่"
+        android:id="@+id/buttonPopUpCalendar"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

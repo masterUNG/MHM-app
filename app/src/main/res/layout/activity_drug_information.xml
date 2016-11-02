@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.DrugInformationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="รายละเอียดยา"
+        android:id="@+id/textView101"
+        android:textSize="@dimen/heading3"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#b500b8"
+        android:textColor="#ffffff"
+        android:autoText="false" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_below="@+id/textView101"
+        android:layout_above="@+id/button_Infor_Finish">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of Medicine"
+                android:id="@+id/textView_Infor_GenericName"
+                android:layout_marginLeft="@dimen/z2_margin_bigspace"
+                android:layout_marginTop="@dimen/z2_margin_bigspace"
+                android:textSize="@dimen/heading2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อการค้า"
+                android:id="@+id/textView44"
+                android:layout_below="@+id/textView_Infor_GenericName"
+                android:textSize="@dimen/heading3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView_Infor_Tradename"
+                android:layout_below="@+id/textView44"
+                android:layout_marginLeft="@dimen/z2_margin_smallgap"
+                android:textSize="@dimen/heading3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/textView103"
+                android:layout_below="@+id/textView_Infor_Tradename"
+                android:layout_margin="@dimen/z2_margin_smallgap"
+                android:textSize="1sp"
+                android:background="#b500b8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รายละเอียดยาอย่างย่อ"
+                android:id="@+id/textView104"
+                android:layout_below="@+id/textView103"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView_Infor_Detail"
+                android:layout_below="@+id/textView104"
+                android:layout_margin="@dimen/z2_margin_bigspace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แหล่งข้อมูลออนไลน์"
+                android:id="@+id/textView102"
+                android:layout_below="@+id/textView_Infor_Detail"
+                android:layout_marginTop="@dimen/z2_margin_bigspace"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView_Infor_Online1"
+                android:layout_below="@+id/textView102"
+                android:layout_margin="@dimen/z2_margin_bigspace"
+                android:textColor="#001aff"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView_Infor_Online2"
+                android:layout_below="@+id/textView_Infor_Online1"
+                android:layout_margin="@dimen/z2_margin_bigspace"
+                android:textColor="#001aff"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เสร็จสิ้น"
+        android:id="@+id/button_Infor_Finish"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

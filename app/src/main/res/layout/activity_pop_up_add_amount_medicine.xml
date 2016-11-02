@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.PopUpAddAmountMedicine"
+    android:background="#252d60">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#edf4ff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="เพิ่มจำนวนยา"
+            android:id="@+id/textView83"
+            android:textSize="@dimen/heading3"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#252d60"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จำนวนที่ต้องการเพิ่ม :"
+            android:id="@+id/textView84"
+            android:layout_margin="@dimen/z2_margin_bigspace" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/z2_margin_space">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-10"
+                android:id="@+id/buttonMinus10"
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-1"
+                android:id="@+id/buttonMinus1"
+                android:layout_weight="2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextAmountMedicine"
+                android:layout_weight="1.8"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:id="@+id/buttonAdd1"
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+10"
+                android:id="@+id/buttonAdd10"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#252d60">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="ยกเลิก"
+            android:id="@+id/textView85"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text=" "
+            android:id="@+id/textView89"
+            android:background="#ffffff"
+            android:layout_margin="@dimen/z2_margin_space"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="ตกลง"
+            android:id="@+id/textView86"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>

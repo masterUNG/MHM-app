@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#7d48859d">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/z1_linearlayout_icon"
+            android:layout_height="@dimen/z1_linearlayout_icon"
+            android:id="@+id/imageViewNewsAdaptor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="New Text"
+            android:id="@+id/textViewNewAdaptor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/heading3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+++คลิกเพื่อดูรายละเอียด+++"
+        android:id="@+id/textView43"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/heading4"
+        android:textColor="#ec4343" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/textView99"
+        android:textSize="1sp"
+        android:background="#ffffff" />
+
+</LinearLayout>

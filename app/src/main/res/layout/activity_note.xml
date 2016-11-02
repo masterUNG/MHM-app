@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.lapponampai_w.mhm_app_beta1.NoteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="บันทึกประจำวัน"
+        android:id="@+id/textView117"
+        android:textSize="@dimen/heading3"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#8b2e8d"
+        android:textColor="#ffffff"
+        android:autoText="false" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewNote"
+        android:layout_below="@+id/textView117"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView118" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/textView118"
+        android:textSize="1sp"
+        android:background="#fd3b3b"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/linNoteFill" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linNoteButton"
+        android:id="@+id/linNoteFill" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ระบุวันที่ :"
+                android:id="@+id/textView120"
+                android:textSize="20sp"
+                android:gravity="left|center" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="12/12/2016"
+                android:id="@+id/textView121"
+                android:textSize="20sp"
+                android:textColor="#e78d4d"
+                android:gravity="center_horizontal"
+                android:background="@drawable/my_border_red" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ข้อความที่ต้องการบันทึก"
+            android:id="@+id/textView119"
+            android:textColor="#b223a4"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/z2_margin_bigspace" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="อาการข้างเคียง / แพ้ยา!!"
+            android:id="@+id/checkBoxNote" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNote"
+            android:hint="บันทึก"
+            android:inputType="text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linNoteButton"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="กลับหน้ากลัก"
+            android:id="@+id/buttonNoteCancel"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="บันทึก"
+            android:id="@+id/buttonNoteSave"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
